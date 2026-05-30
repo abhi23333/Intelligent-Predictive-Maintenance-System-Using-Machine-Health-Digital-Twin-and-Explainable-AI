@@ -4,7 +4,7 @@
 
 This project presents an Intelligent Predictive Maintenance System that combines Machine Learning, Machine Health Analytics, and Digital Twin concepts to predict industrial machine failures before breakdowns occur. In addition to failure prediction, the system generates a Machine Health Index (MHI), Failure Severity Score, Remaining Useful Life (RUL) estimation, and maintenance recommendations to support proactive maintenance strategies in Industry 4.0 environments.
 
-The framework is designed to help industries reduce downtime, optimize maintenance schedules, improve equipment reliability, and enable data-driven maintenance decision-making.
+The developed XGBoost-based predictive model achieved an accuracy of 98.85%, with 99% recall and 99% F1-score on machine failure detection. The framework is designed to help industries reduce downtime, optimize maintenance schedules, improve equipment reliability, and enable data-driven maintenance decision-making.
 
 ## Motivation
 
@@ -66,13 +66,21 @@ Creates a digital representation of machine condition using derived health metri
 
 AI4I 2020 Predictive Maintenance Dataset
 
+### Dataset Sources
+
+1. UCI Machine Learning Repository
+   https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset
+
+2. Kaggle Dataset
+   https://www.kaggle.com/datasets/shivamb/real-life-industrial-dataset-of-machines
+
 ### Dataset Characteristics
 
-1. 10,000 industrial machine records.
-2. Realistic industrial operating conditions.
-3. Sensor and operational parameter data.
-4. Multiple machine failure indicators.
-5. Binary machine failure classification target.
+1. Total Records: 10,000
+2. Industrial Machine Instances
+3. Sensor and Operational Parameters
+4. Multiple Failure Indicators
+5. Binary Machine Failure Classification
 
 ### Features Used
 
@@ -114,22 +122,35 @@ Machine Failure
 
 ## Results
 
-The proposed predictive maintenance framework achieved excellent performance on the AI4I 2020 Predictive Maintenance Dataset by combining advanced feature engineering, class balancing, and XGBoost-based classification.
+The proposed Intelligent Predictive Maintenance System was evaluated on the AI4I 2020 Predictive Maintenance Dataset using advanced feature engineering, SMOTE-Tomek class balancing, and an XGBoost-based classification model.
 
-### Performance Metrics
+### Model Performance
 
-1. Accuracy: Approximately 99%
-2. Precision: High precision in identifying machine failures
-3. Recall: Effective detection of failure-prone equipment
-4. F1-Score: Balanced classification performance
-5. Reduced false positives through optimized feature engineering
+1. Accuracy: 98.85%
+2. Precision (Failure Class): 98%
+3. Recall (Failure Class): 99%
+4. F1-Score (Failure Class): 99%
+
+### Classification Report
+
+| Class               | Precision | Recall | F1-Score |
+| ------------------- | --------- | ------ | -------- |
+| Healthy Machine (0) | 99%       | 98%    | 99%      |
+| Failure Machine (1) | 98%       | 99%    | 99%      |
+
+### Confusion Matrix
+
+| Actual \ Predicted | Healthy | Failure |
+| ------------------ | ------- | ------- |
+| Healthy            | 1876    | 34      |
+| Failure            | 10      | 1900    |
 
 ### Generated Outputs
 
 1. Machine Failure Prediction
 2. Machine Health Index (MHI)
-3. Failure Severity Score
-4. Remaining Useful Life (RUL)
+3. Failure Severity Assessment
+4. Remaining Useful Life (RUL) Estimation
 5. Maintenance Priority Recommendation
 6. Failure Probability Analysis
 7. Maintenance Alert Generation
@@ -143,15 +164,18 @@ The proposed predictive maintenance framework achieved excellent performance on 
 | Failure Severity      | High                                 |
 | Remaining Useful Life | 48 Hours                             |
 | Maintenance Action    | Schedule Maintenance Within 24 Hours |
+| Predicted Status      | Failure Expected                     |
 
 ### Key Achievements
 
-1. Successfully predicted machine failures before breakdown.
-2. Generated machine health assessment metrics.
-3. Estimated machine operational lifespan.
-4. Produced intelligent maintenance recommendations.
-5. Improved maintenance planning and decision-making.
-6. Demonstrated applicability for Industry 4.0 environments.
+1. Achieved 98.85% prediction accuracy on industrial machine failure detection.
+2. Correctly classified 3,776 out of 3,820 test instances.
+3. Successfully identified 1,900 machine failure cases.
+4. Reduced false negatives to only 10 cases.
+5. Generated machine health assessment metrics for proactive maintenance planning.
+6. Produced intelligent maintenance recommendations based on machine condition.
+7. Implemented a Machine Health Digital Twin framework for maintenance decision support.
+8. Demonstrated applicability for Industry 4.0 and Industrial Internet of Things (IIoT) environments.
 
 ## Industrial Applications
 
@@ -178,4 +202,6 @@ The proposed predictive maintenance framework achieved excellent performance on 
 ## Conclusion
 
 The Intelligent Predictive Maintenance System demonstrates how Machine Learning can be combined with Machine Health Analytics and Digital Twin concepts to create an advanced predictive maintenance solution. By integrating machine failure prediction, health assessment, remaining useful life estimation, and maintenance recommendations, the framework enables proactive maintenance strategies that improve reliability, reduce downtime, and optimize industrial operations.
+
+
 
