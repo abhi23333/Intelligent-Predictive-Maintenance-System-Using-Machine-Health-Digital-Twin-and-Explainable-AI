@@ -68,10 +68,10 @@ AI4I 2020 Predictive Maintenance Dataset
 
 ### Dataset Sources
 
-1. UCI Machine Learning Repository
+1. UCI Machine Learning Repository  
    https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset
 
-2. Kaggle Dataset
+2. Kaggle Dataset  
    https://www.kaggle.com/datasets/shivamb/real-life-industrial-dataset-of-machines
 
 ### Dataset Characteristics
@@ -133,17 +133,17 @@ The proposed Intelligent Predictive Maintenance System was evaluated on the AI4I
 
 ### Classification Report
 
-| Class               | Precision | Recall | F1-Score |
-| ------------------- | --------- | ------ | -------- |
-| Healthy Machine (0) | 99%       | 98%    | 99%      |
-| Failure Machine (1) | 98%       | 99%    | 99%      |
+| Class | Precision | Recall | F1-Score |
+|---------|---------|---------|---------|
+| Healthy Machine (0) | 99% | 98% | 99% |
+| Failure Machine (1) | 98% | 99% | 99% |
 
 ### Confusion Matrix
 
 | Actual \ Predicted | Healthy | Failure |
-| ------------------ | ------- | ------- |
-| Healthy            | 1876    | 34      |
-| Failure            | 10      | 1900    |
+|-------------------|----------|----------|
+| Healthy | 1876 | 34 |
+| Failure | 10 | 1900 |
 
 ### Generated Outputs
 
@@ -157,14 +157,13 @@ The proposed Intelligent Predictive Maintenance System was evaluated on the AI4I
 
 ### Sample Prediction Output
 
-| Metric                | Output                               |
-| --------------------- | ------------------------------------ |
-| Machine Health Index  | 81.4 / 100                           |
-| Failure Probability   | 91.2%                                |
-| Failure Severity      | High                                 |
-| Remaining Useful Life | 48 Hours                             |
-| Maintenance Action    | Schedule Maintenance Within 24 Hours |
-| Predicted Status      | Failure Expected                     |
+| Metric | Output |
+|----------|----------|
+| Machine Health Index | 57.20 / 100 |
+| Failure Severity Score | 45.59 / 100 |
+| Remaining Useful Life | 108.82 Hours |
+| Maintenance Action | Within 7 Days |
+| Predicted Failure Type | Healthy |
 
 ### Key Achievements
 
@@ -202,6 +201,3 @@ The proposed Intelligent Predictive Maintenance System was evaluated on the AI4I
 ## Conclusion
 
 The Intelligent Predictive Maintenance System demonstrates how Machine Learning can be combined with Machine Health Analytics and Digital Twin concepts to create an advanced predictive maintenance solution. By integrating machine failure prediction, health assessment, remaining useful life estimation, and maintenance recommendations, the framework enables proactive maintenance strategies that improve reliability, reduce downtime, and optimize industrial operations.
-
-
-
