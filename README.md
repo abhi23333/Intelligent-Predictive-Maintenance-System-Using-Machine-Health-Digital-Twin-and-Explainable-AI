@@ -1,0 +1,2 @@
+# Intelligent-Predictive-Maintenance-System-Using-Machine-Health-Digital-Twin-and-Explainable-AI
+Developed an AI-driven Predictive Maintenance System using XGBoost and advanced feature engineering to predict industrial machine failures. The framework introduces a Machine Health Index, Failure Severity Analysis, Remaining Useful Life estimation, and intelligent maintenance recommendations to support Industry 4.0 decision-making.
